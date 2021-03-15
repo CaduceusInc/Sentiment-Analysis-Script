@@ -1,21 +1,5 @@
 # coding: utf-8
 
-"""
-
-Text classifier to determine whether a
-movie review is expressing positive or negative sentiment. The data come from
-the website IMDB.com.
-
-Code preprocesses the data in different ways (creating different
-features), then compares the cross-validation accuracy of each approach. Then,
-the accuracy is computed accuracy on a test setas well as some analysis of the errors.
-
-The main method takes about 40 seconds for me to run on my laptop. Places to
-check for inefficiency include the vectorize function and the
-eval_all_combinations function.
-
-
-"""
 
 from collections import Counter, defaultdict
 from itertools import chain, combinations
